@@ -1,0 +1,5 @@
+[tools]
+java = "26"
+
+[env]
+JAVA_HOME = 'C:\Users\brandon\AppData\Local\mise\installs\java\26.0.2.1'

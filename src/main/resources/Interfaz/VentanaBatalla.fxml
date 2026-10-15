@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="644.0" prefWidth="854.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.VentanaBatalla">
+
+   <children>
+      <ImageView fitHeight="718.0" fitWidth="860.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagenes/Fondo.png" />
+         </image>
+      </ImageView>
+      <HBox layoutY="490.0" prefHeight="152.0" prefWidth="854.0" style="-fx-background-color: #E0E0E0;">
+         <children>
+            <Label prefHeight="152.0" prefWidth="647.0" text="                 Que quieres hacer" textAlignment="CENTER">
+               <font>
+                  <Font name="Century Gothic" size="23.0" />
+               </font>
+            </Label>
+            <VBox alignment="TOP_CENTER" cacheShape="false" centerShape="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="152.0" prefWidth="304.0" scaleShape="false" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label prefHeight="70.0" prefWidth="106.0" text="A quien quieres atacar" wrapText="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="enemigoAtacar1" mnemonicParsing="false" text="RadioButton">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="toggleAtaque" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="enemigoAtacar2" mnemonicParsing="false" text="RadioButton" toggleGroup="$toggleAtaque" />
+                  <RadioButton fx:id="enemigoAtacar3" mnemonicParsing="false" text="RadioButton" toggleGroup="$toggleAtaque" />
+               </children>
+               <effect>
+                  <Blend />
+               </effect>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox prefHeight="152.0" prefWidth="308.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Button fx:id="Ataque_1" mnemonicParsing="false" prefHeight="78.0" prefWidth="176.0" text="Ataque 1" wrapText="true"/>
+                  <Button fx:id="Ataque_3" mnemonicParsing="false" prefHeight="73.0" prefWidth="178.0" text="Ataque 3" wrapText="true"/>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </VBox>
+            <VBox prefHeight="152.0" prefWidth="308.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Button fx:id="Ataque_2" mnemonicParsing="false" prefHeight="78.0" prefWidth="178.0" text="Ataque 2" wrapText="true"/>
+                  <Button fx:id="Ataque_4" mnemonicParsing="false" prefHeight="73.0" prefWidth="178.0" text="Ataque 4" wrapText="true"/>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </VBox>
+         </children>
+         <cursor>
+            <Cursor fx:constant="E_RESIZE" />
+         </cursor>
+      </HBox>
+
+      <Label fx:id="LabelJugador1" layoutX="63.0" layoutY="31.0" text="Jugador 1" textFill="WHITE" />
+      <Label fx:id="LabelVidaJugador1" layoutX="126.0" layoutY="31.0" text="Vida jugador 1" textFill="WHITE" />
+      <ImageView fx:id="imagenJugador1" fitHeight="97.0" fitWidth="97.0" layoutX="63.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" />
+
+      <Label fx:id="LabelJugador2" layoutX="152.0" layoutY="172.0" text="Jugador 2" textFill="WHITE" />
+      <Label fx:id="LabelVidaJugador2" layoutX="225.0" layoutY="172.0" text="Vida jugador 2" textFill="WHITE" />
+      <ImageView fx:id="imagenJugador2" fitHeight="97.0" fitWidth="97.0" layoutX="152.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true" />
+
+      <Label fx:id="LabelJugador3" layoutX="76.0" layoutY="295.0" text="Jugador 3" textFill="WHITE" />
+      <Label fx:id="LabelVidaJugador3" layoutX="152.0" layoutY="295.0" text="Vida jugador 3" textFill="WHITE" />
+      <ImageView fx:id="imagenJugador3" fitHeight="97.0" fitWidth="97.0" layoutX="67.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true" />
+      
+      <Label fx:id="LabelEnemigo1" layoutX="684.0" layoutY="22.0" text="Enemigo 1" textFill="WHITE" />
+      <Label fx:id="LabelVidaEnemigo1" layoutX="653.0" layoutY="22.0" text="Vida enemigo 1" textFill="WHITE" />
+      <ImageView fx:id="imagenEnemigo1" fitHeight="97.0" fitWidth="97.0" layoutX="684.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true" />
+
+      <Label fx:id="LabelEnemigo2" layoutX="568.0" layoutY="159.0" text="Enemigo 2" textFill="WHITE" />
+      <Label fx:id="LabelVidaEnemigo2" layoutX="530.0" layoutY="159.0" text="Vida enemigo 2" textFill="WHITE" />
+      <ImageView fx:id="imagenEnemigo2" fitHeight="97.0" fitWidth="97.0" layoutX="568.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true" />
+
+      <Label fx:id="LabelEnemigo3" layoutX="700.0" layoutY="303.0" text="Enemigo 3" textFill="WHITE" />
+      <Label fx:id="LabelVidaEnemigo3" layoutX="649.0" layoutY="303.0" text="Vida enemigo 1" textFill="WHITE" />
+      <ImageView fx:id="imagenEnemigo3" fitHeight="97.0" fitWidth="97.0" layoutX="700.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true" />
+      
+   </children>
+</Pane>

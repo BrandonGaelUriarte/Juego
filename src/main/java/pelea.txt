@@ -1,0 +1,61 @@
+
+==================Turno Aliado====================== 
+Atacaste a Goblin
+Le hiciste 30
+Al enemigo le queda 70 de vida
+
+==================Turno enemigo====================== 
+Te atacaron
+Te hicieron 10
+Te queda 50 de vida
+
+==================Turno Aliado====================== 
+Atacaste a Goblin
+Le hiciste 30
+Al enemigo le queda 70 de vida
+
+==================Turno enemigo====================== 
+Te atacaron
+Te hicieron 10
+Te queda 40 de vida
+
+==================Turno Aliado====================== 
+Atacaste a Goblin
+Le hiciste 30
+Al enemigo le queda 70 de vida
+
+==================Turno enemigo====================== 
+Te atacaron
+Te hicieron 10
+Te queda 30 de vida
+
+==================Turno Aliado====================== 
+Atacaste a Goblin
+Le hiciste 30
+Al enemigo le queda 70 de vida
+
+==================Turno enemigo====================== 
+Te atacaron
+Te hicieron 10
+Te queda 20 de vida
+
+==================Turno Aliado====================== 
+Atacaste a Goblin
+Le hiciste 30
+Al enemigo le queda 70 de vida
+
+==================Turno enemigo====================== 
+Te atacaron
+Te hicieron 10
+Te queda 10 de vida
+
+==================Turno Aliado====================== 
+Atacaste a Goblin
+Le hiciste 30
+Al enemigo le queda 70 de vida
+
+==================Turno enemigo====================== 
+Te atacaron
+Te hicieron 10
+Te queda 0 de vida
+Perdiste
